@@ -23,9 +23,9 @@ class MainActivity : AppCompatActivity() {
     {
         Intent(Intent.ACTION_VIEW, Uri.parse(s)).also { startActivity(it) }
     }
-    fun call()
+    fun call(n:String)
     {
-
+        Intent(Intent.ACTION_DIAL).setData(Uri.parse("tel:$n")).also { startActivity(it) }
     }
     fun calllog()
     {

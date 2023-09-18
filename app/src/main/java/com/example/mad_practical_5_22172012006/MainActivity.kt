@@ -17,9 +17,35 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val browserButton:Button = findViewById(R.id.button_brows)
         val editTextBrowser:EditText = findViewById(R.id.editTextText)
+        val editTextCall:EditText = findViewById(R.id.editTextPhone2)
+        val cal:Button = findViewById(R.id.button2)
+        val callog:Button = findViewById(R.id.button3)
+        val gallery:Button = findViewById(R.id.button4)
+        val camera:Button = findViewById(R.id.button5)
+        val alarm:Button = findViewById(R.id.button6)
+
+
         browserButton.setOnClickListener {
             openurl(editTextBrowser.text.toString())
 
+        }
+
+        cal.setOnClickListener{
+            call(editTextCall.text.toString())
+        }
+
+        callog.setOnClickListener{
+            calllog()
+        }
+        gallery.setOnClickListener{
+            gallery()
+        }
+        camera.setOnClickListener{
+            camera()
+        }
+
+        alarm.setOnClickListener{
+            alarm()
         }
     }
 

@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
         val browserButton:Button = findViewById(R.id.button_brows)
         val editTextBrowser:EditText = findViewById(R.id.editTextText)
         val editTextCall:EditText = findViewById(R.id.editTextPhone2)
-        val cal:Button = findViewById(R.id.button2)
-        val callog:Button = findViewById(R.id.button3)
-        val gallery:Button = findViewById(R.id.button4)
+        val cal:Button = findViewById(R.id.button8)
+        val callog:Button = findViewById(R.id.button9)
+        val gallery:Button = findViewById(R.id.button10)
         val camera:Button = findViewById(R.id.button5)
         val alarm:Button = findViewById(R.id.button6)
 
